@@ -169,17 +169,19 @@ export default function TarotCardFlip({ card, isReversed, isFlipped, onClick }: 
           className="absolute inset-0 rounded-2xl overflow-hidden border-2 border-yellow-400/60 shadow-[0_0_40px_rgba(234,179,8,0.4)]"
         >
           {!imgError ? (
-            <div className={`w-full h-full relative ${isReversed ? 'rotate-180' : ''}`}>
-              <Image
-                src={imgSrc}
-                alt={card.name}
-                fill
-                style={{ objectFit: 'cover' }}
-                onError={() => setImgError(true)}
-                priority
-              />
+            <div className="w-full h-full relative">
+              <div className={`w-full h-full relative ${isReversed ? 'rotate-180' : ''}`}>
+                <Image
+                  src={imgSrc}
+                  alt={card.name}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  onError={() => setImgError(true)}
+                  priority
+                />
+              </div>
               {isReversed && (
-                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 rotate-180 px-2 py-0.5 rounded-full bg-red-900/70 border border-red-400/40 text-red-300 text-[9px] whitespace-nowrap">
+                <div className="absolute top-2 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-red-900/80 border border-red-400/50 text-red-300 text-[9px] whitespace-nowrap z-10 backdrop-blur-sm">
                   逆位置
                 </div>
               )}
