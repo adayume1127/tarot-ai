@@ -98,6 +98,25 @@ export default function CardsPage() {
             ✦ AIタロット占いを試してみる
           </Link>
         </div>
+
+        {/* 放置ゲームバナー */}
+        <div className="mt-6">
+          <a
+            href="https://tsukiyo-tarot.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded-2xl p-5 text-center transition-all duration-300 hover:scale-[1.02]"
+            style={{
+              background: 'linear-gradient(135deg, rgba(15,0,40,0.8), rgba(10,0,30,0.9))',
+              border: '1px solid rgba(234,179,8,0.35)',
+              boxShadow: '0 0 30px rgba(234,179,8,0.08)',
+            }}
+          >
+            <p className="font-cinzel text-yellow-400 text-xs tracking-widest mb-1">LUNA IDLE GAME</p>
+            <p className="text-white text-base mb-1">月夜のタロット放置ゲーム</p>
+            <p className="text-purple-300 text-xs">ルナと一緒にカードを集めて育てる放置ゲーム。無料プレイ →</p>
+          </a>
+        </div>
       </div>
     </div>
   )
