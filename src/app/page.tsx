@@ -212,6 +212,23 @@ export default function Home() {
       {/* ⑥ カードギャラリー */}
       <CardGallery />
 
+      {/* デイリータロットバナー */}
+      <section className="relative z-10 px-6 pb-4 max-w-3xl mx-auto">
+        <Link
+          href="/daily"
+          className="block rounded-2xl p-6 text-center transition-all duration-300 hover:scale-[1.02]"
+          style={{
+            background: 'rgba(255,255,255,0.03)',
+            border: '1px solid rgba(168,85,247,0.3)',
+            boxShadow: '0 0 30px rgba(168,85,247,0.1)',
+          }}
+        >
+          <p className="font-cinzel text-purple-300 text-xs tracking-widest mb-2">DAILY TAROT</p>
+          <p className="text-white text-lg mb-1">今日のタロット</p>
+          <p className="text-purple-300 text-sm">ルナが今日のあなたへメッセージを届けます →</p>
+        </Link>
+      </section>
+
       {/* カード辞典バナー */}
       <section className="relative z-10 px-6 py-8 max-w-3xl mx-auto">
         <Link
