@@ -230,7 +230,10 @@ export default function Home() {
       </section>
 
       <footer className="relative z-10 text-center py-10 mt-8">
-        <div className="font-cinzel text-xs tracking-[0.4em] text-purple-300/20">LUNA TAROT © 2026</div>
+        <div className="font-cinzel text-xs tracking-[0.4em] text-purple-300/20 mb-3">LUNA TAROT © 2026</div>
+        <Link href="/privacy" className="text-purple-500 hover:text-purple-400 text-xs transition-colors">
+          プライバシーポリシー
+        </Link>
       </footer>
     </div>
   )
