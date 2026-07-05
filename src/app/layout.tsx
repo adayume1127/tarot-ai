@@ -4,6 +4,9 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Luna Tarot | AIタロット占い',
   description: 'ルナが導く神秘のタロット占い。あなたの運命のカードを引いてみましょう。',
+  verification: {
+    google: 'itRbaCOOtif7c2Ln5UgFBqBxYVDdl5rE1YQoi46D_68',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
