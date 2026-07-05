@@ -212,6 +212,23 @@ export default function Home() {
       {/* ⑥ カードギャラリー */}
       <CardGallery />
 
+      {/* カード辞典バナー */}
+      <section className="relative z-10 px-6 py-8 max-w-3xl mx-auto">
+        <Link
+          href="/cards"
+          className="block rounded-2xl p-6 text-center transition-all duration-300 hover:scale-[1.02]"
+          style={{
+            background: 'rgba(255,255,255,0.03)',
+            border: '1px solid rgba(234,179,8,0.3)',
+            boxShadow: '0 0 30px rgba(168,85,247,0.1)',
+          }}
+        >
+          <p className="font-cinzel text-yellow-300 text-xs tracking-widest mb-2">TAROT DICTIONARY</p>
+          <p className="text-white text-lg mb-1">タロットカード 意味辞典</p>
+          <p className="text-purple-300 text-sm">大アルカナ22枚の正位置・逆位置、恋愛・仕事・金運を詳しく解説 →</p>
+        </Link>
+      </section>
+
       <footer className="relative z-10 text-center py-10 mt-8">
         <div className="font-cinzel text-xs tracking-[0.4em] text-purple-300/20">LUNA TAROT © 2026</div>
       </footer>
