@@ -212,6 +212,29 @@ export default function Home() {
       {/* ⑥ カードギャラリー */}
       <CardGallery />
 
+      {/* 占いメニュー */}
+      <section className="relative z-10 px-6 py-8 max-w-3xl mx-auto">
+        <h2 className="text-center font-cinzel text-sm tracking-[0.4em] text-yellow-400/70 mb-8">MORE FORTUNES</h2>
+        <div className="grid md:grid-cols-3 gap-4">
+          {[
+            { href: '/numerology', icon: '🌟', title: '数秘術占い', desc: '生年月日からライフパスナンバーを診断' },
+            { href: '/guardian-animal', icon: '🐺', title: '守護動物診断', desc: '生年月日からあなたを守る動物を診断' },
+            { href: '/name-fortune', icon: '🌸', title: '名前占い', desc: 'お名前からあなたの運気を診断' },
+          ].map((f) => (
+            <Link
+              key={f.href}
+              href={f.href}
+              className="block rounded-2xl p-5 text-center gold-border transition-all duration-300 hover:scale-[1.03]"
+              style={{ background: 'linear-gradient(135deg, #0e0020, #0a0018)' }}
+            >
+              <div className="text-3xl mb-3">{f.icon}</div>
+              <h3 className="font-zen text-yellow-300 font-bold mb-1 text-sm tracking-wider">{f.title}</h3>
+              <p className="font-zen text-purple-200/50 text-xs leading-relaxed">{f.desc}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* デイリータロットバナー */}
       <section className="relative z-10 px-6 pb-4 max-w-3xl mx-auto">
         <Link
